@@ -1,0 +1,21 @@
+package shipyard
+
+type (
+	ClusterInfo struct {
+		Cpus           float64 `json:"cpus,omitempty"`
+		Memory         float64 `json:"memory,omitempty"`
+		ContainerCount int     `json:"container_count,omitempty"`
+		EngineCount    int     `json:"engine_count,omitempty"`
+		ImageCount     int     `json:"image_count,omitempty"`
+		ReservedCpus   float64 `json:"reserved_cpus,omitempty"`
+		ReservedMemory float64 `json:"reserved_memory,omitempty"`
+		Version        string  `json:"version,omitempty"`
+	}
+
+	// 前端显示的系统名称
+	SystemInfo struct {
+		Title	string `json:"title,omitempty"`
+		Name	string `json:"title,omitrmpty"`
+	}
+)
+
